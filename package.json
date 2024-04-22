@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "nx": "nx",
-    "dev/game-mate": "nx dev game-mate",
+    "dev/my-next": "nx dev my-next",
     "dev/my-vue": "nx serve my-vue"
   },
   "private": true,
@@ -20,7 +20,7 @@
     "@nx/eslint-plugin": "18.3.3",
     "@nx/jest": "18.3.3",
     "@nx/js": "18.3.3",
-    "@nx/next": "18.3.3",
+    "@nx/next": "^18.3.3",
     "@nx/vite": "18.3.3",
     "@nx/vue": "^18.3.3",
     "@nx/web": "18.3.3",
@@ -28,6 +28,7 @@
     "@swc-node/register": "~1.8.0",
     "@swc/core": "~1.3.85",
     "@swc/helpers": "~0.5.2",
+    "@testing-library/react": "14.0.0",
     "@types/jest": "^29.4.0",
     "@types/node": "18.16.9",
     "@types/react": "18.2.33",

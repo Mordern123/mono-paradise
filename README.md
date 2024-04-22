@@ -12,11 +12,11 @@ comes with a LSP for Vim users.
 
 ## Start the application
 
-Run `npx nx dev game-mate` to start the development server. Happy coding!
+Run `npx nx dev my-next` to start the development server. Happy coding!
 
 ## Build for production
 
-Run `npx nx build game-mate` to build the application. The build artifacts are stored in the output directory (e.g. `dist/` or `build/`), ready to be deployed.
+Run `npx nx build my-next` to build the application. The build artifacts are stored in the output directory (e.g. `dist/` or `build/`), ready to be deployed.
 
 ## Running tasks
 

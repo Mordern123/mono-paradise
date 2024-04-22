@@ -1,9 +1,9 @@
 {
-  "name": "game-mate",
+  "name": "my-next",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/game-mate",
+  "sourceRoot": "apps/my-next",
   "projectType": "application",
   "tags": [],
-  "// targets": "to see all targets run: nx show project game-mate --web",
+  "// targets": "to see all targets run: nx show project my-next --web",
   "targets": {}
 }
