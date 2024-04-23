@@ -8,8 +8,12 @@
         </h1>
       </div>
       <input type="text" :value="hexColor" @input="handleInputChange" />
-      <p>RGB: {{ hexToRgb(hexColor) }}</p>
-      <div :style="{ backgroundColor: hexToRgb(hexColor), width: '100px', height: '100px' }"></div>
+      <div className="rgb_block">
+        <p>R: {{ hexToRgb(hexColor).r }}</p>
+        <p>G: {{ hexToRgb(hexColor).g }}</p>
+        <p>B: {{ hexToRgb(hexColor).b }}</p>
+      </div>
+      <div :style="{ backgroundColor: hexColor, width: '100px', height: '100px' }"></div>
     </div>
   </div>
 </template>

@@ -1,2 +1,2 @@
 export * from './lib/hexToRgb';
-export * from './lib/getDate';
+export * from './lib/rgbToHex';

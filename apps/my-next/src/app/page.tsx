@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, ChangeEvent  } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import styles from './page.module.css';
 import { hexToRgb } from '@mono-paradise/ui';
 
@@ -20,9 +20,19 @@ export default function Index() {
               Welcome my-next 👋
             </h1>
           </div>
-          <input type="text" value={hexColor} onChange={handleInputChange} />
-          <p>RGB: {hexToRgb(hexColor)}</p>
-          <div style={{ backgroundColor: hexToRgb(hexColor), width: '100px', height: '100px' }}></div>
+          <div className="color_block">
+            <div className="hex_block">
+              HEX: <input type="text" value={hexColor} onChange={handleInputChange} />
+            </div>
+            <div className="color_view_block">
+              <div style={{ backgroundColor: hexColor, width: '100%', height: '200px', borderRadius: '5px' }}></div>
+            </div>
+            <div className="rgb_block">
+              <p>R: {hexToRgb(hexColor).r}</p>
+              <p>G: {hexToRgb(hexColor).g}</p>
+              <p>B: {hexToRgb(hexColor).b}</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
