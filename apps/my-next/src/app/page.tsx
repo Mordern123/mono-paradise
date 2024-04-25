@@ -1,18 +1,25 @@
-'use client'
-import React, { useState, ChangeEvent } from 'react';
+// 'use client'
+// import React, { useState, ChangeEvent } from 'react';
 import styles from './page.module.css';
 import { hexToRgb } from '@mono-paradise/ui';
+import ClientComponent from '../components/clientComponent';
+// import ServerComponent from '../components/serverComponent';
 
 export default function Index() {
-  const [hexColor, setHexColor] = useState('#ff0000');
+  // const [hexColor, setHexColor] = useState('#ff0000');
 
-  const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
-    setHexColor(event.target.value);
-  };
+  // const handleInputChange = (event: ChangeEvent<HTMLInputElement>) => {
+  //   setHexColor(event.target.value);
+  // };
 
   return (
     <div className={styles.page}>
-      <div className="wrapper">
+      <ClientComponent />
+
+      {/* <ClientComponent>
+        <ServerComponent />
+      </ClientComponent> */}
+      {/* <div className="wrapper">
         <div className="container">
           <div id="welcome">
             <h1>
@@ -34,7 +41,7 @@ export default function Index() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
